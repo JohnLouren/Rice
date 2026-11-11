@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5man's Rice Trading | My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ===== HEADER AND NAVIGATION ===== -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html"><img src="images/logo.png" alt="5man's Rice Trading logo" class="logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>My Profile</h1>
+            <p>Your account details</p>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container profile-layout">
+
+            <!-- ===== LEFT: ACCOUNT SUMMARY ===== -->
+            <div class="contact-box profile-summary">
+                <div class="profile-avatar" id="profile-avatar">?</div>
+                <h2 id="profile-title">Loading...</h2>
+                <p class="profile-handle" id="profile-username"></p>
+
+                <div class="profile-stats">
+                    <div class="contact-item">
+                        <strong>Member Since</strong>
+                        <span id="stat-member">—</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Last Login</strong>
+                        <span id="stat-last">—</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Total Logins</strong>
+                        <span id="stat-count">0</span>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-danger" id="logout-btn">Log Out</button>
+            </div>
+
+            <!-- ===== RIGHT: EDIT PROFILE ===== -->
+            <div class="contact-box">
+                <h2>Profile Details</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="profile-name">Display Name</label>
+                        <input type="text" id="profile-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-email">Email</label>
+                        <input type="email" id="profile-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-phone">Phone Number</label>
+                        <input type="tel" id="profile-phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-address">Delivery Address</label>
+                        <textarea id="profile-address" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Save Changes</button>
+                    <p class="form-message" id="profile-note"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <img src="images/logo.png" alt="5man's Rice Trading logo" class="logo">
+            <div>
+                <h3>Contacts</h3>
+                <p><a href="mailto:5mans@gmail.com">5mans@gmail.com</a></p>
+                <p><a href="tel:09712345512">09712345512</a></p>
+                <p>Davao City, Philippines</p>
+            </div>
+        </div>
+        <p class="copyright">© 5man's Rice Trading. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

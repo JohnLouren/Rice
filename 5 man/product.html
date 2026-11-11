@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5man's Rice Trading | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ===== HEADER AND NAVIGATION ===== -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html"><img src="images/logo.png" alt="5man's Rice Trading logo" class="logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html" class="active">Product</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </header>
+
+    <section class="page-banner banner-photo">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Click a rice to see its details</p>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container product-layout">
+
+            <!-- ===== LEFT: PRODUCT CARDS =====
+                 data-product must match a key in the products list in script.js -->
+            <div class="product-list">
+
+                <div class="product-card" data-product="jasmine">
+                    <img src="images/jasmine.jpg" alt="Jasmine Rice">
+                    <div class="card-info">
+                        <h3>Jasmine Rice</h3>
+                        <p class="card-price">₱55 per kilo</p>
+                        <button type="button" class="btn inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="black">
+                    <img src="images/black.jpg" alt="Black Rice">
+                    <div class="card-info">
+                        <h3>Black Rice</h3>
+                        <p class="card-price">₱80 per kilo</p>
+                        <button type="button" class="btn inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="grain">
+                    <img src="images/grain.jpg" alt="Grain Rice">
+                    <div class="card-info">
+                        <h3>Grain Rice</h3>
+                        <p class="card-price">₱42 per kilo</p>
+                        <button type="button" class="btn inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="glutinous">
+                    <img src="images/glutinous.jpg" alt="Glutinous Rice">
+                    <div class="card-info">
+                        <h3>Glutinous Rice</h3>
+                        <p class="card-price">₱75 per kilo</p>
+                        <button type="button" class="btn inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="kuhako">
+                    <img src="images/kuhako.jpg" alt="Kuhako Rice">
+                    <div class="card-info">
+                        <h3>Kuhako Rice</h3>
+                        <p class="card-price">₱75 per kilo</p>
+                        <button type="button" class="btn inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ===== RIGHT: PRODUCT DETAILS =====
+                 script.js fills these elements when a card is clicked.
+                 The text below is only the starting content (Jasmine). -->
+            <div class="product-details" id="product-details">
+                <p class="details-label">Product Details</p>
+
+                <img id="detail-image" src="images/jasmine.jpg" alt="Jasmine Rice">
+
+                <h2 id="detail-name">Jasmine Rice</h2>
+                <p class="description" id="detail-description">Fragrant, soft, and slightly sticky when cooked.</p>
+
+                <table class="price-table">
+                    <tr>
+                        <td>Price per Kilo</td>
+                        <td id="detail-price-kilo">₱55</td>
+                    </tr>
+                    <tr>
+                        <td>Price per 25kg Sack</td>
+                        <td id="detail-price-25">₱1,375</td>
+                    </tr>
+                    <tr>
+                        <td>Price per 50kg Sack</td>
+                        <td id="detail-price-50">₱2,750</td>
+                    </tr>
+                </table>
+
+                <h3 id="detail-why">Why Choose Jasmine Rice?</h3>
+                <div class="benefits">
+                    <div class="benefit"><span id="benefit-icon-1">🌸</span><p id="benefit-text-1">Subtle Floral Aroma</p></div>
+                    <div class="benefit"><span id="benefit-icon-2">☁️</span><p id="benefit-text-2">Soft, Fluffy Texture</p></div>
+                    <div class="benefit"><span id="benefit-icon-3">🏅</span><p id="benefit-text-3">Premium Quality</p></div>
+                    <div class="benefit"><span id="benefit-icon-4">🍚</span><p id="benefit-text-4">Versatile Cooking</p></div>
+                </div>
+
+                <a href="contact.html" class="btn" id="detail-inquire">Inquire Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <img src="images/logo.png" alt="5man's Rice Trading logo" class="logo">
+            <div>
+                <h3>Contacts</h3>
+                <p><a href="mailto:5mans@gmail.com">5mans@gmail.com</a></p>
+                <p><a href="tel:09712345512">09712345512</a></p>
+                <p>Davao City, Philippines</p>
+            </div>
+        </div>
+        <p class="copyright">© 5man's Rice Trading. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

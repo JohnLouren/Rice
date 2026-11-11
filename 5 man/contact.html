@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5man's Rice Trading | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ===== HEADER AND NAVIGATION ===== -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html"><img src="images/logo.png" alt="5man's Rice Trading logo" class="logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+
+            <div class="contact-layout">
+
+                <!-- ===== LEFT: CONTACT DETAILS AND FORM ===== -->
+                <div class="contact-box">
+                    <h2>Get in Touch</h2>
+
+                    <div class="contact-item">
+                        <strong>Email Address</strong>
+                        <a href="mailto:5mans@gmail.com">5mans@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone Number</strong>
+                        <a href="tel:09712345512">09712345512</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Location</strong>
+                        <span>Davao City, Philippines</span>
+                    </div>
+
+                    <h2 style="margin-top: 25px;">Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <p class="form-message" id="contact-note"></p>
+                    </form>
+                </div>
+
+                <!-- ===== RIGHT: GOOGLE MAP ===== -->
+                <div class="contact-box map-box">
+                    <h2>Find Us Here</h2>
+                    <iframe
+                        src="https://maps.google.com/maps?q=Davao%20City%2C%20Philippines&z=13&output=embed"
+                        title="Map of Davao City"
+                        loading="lazy"
+                        allowfullscreen></iframe>
+                    <p style="margin-top: 15px;">
+                        <a class="btn btn-outline"
+                           href="https://www.google.com/maps/dir/?api=1&destination=Davao%20City%2C%20Philippines"
+                           target="_blank" rel="noopener noreferrer">Get Directions</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <img src="images/logo.png" alt="5man's Rice Trading logo" class="logo">
+            <div>
+                <h3>Contacts</h3>
+                <p><a href="mailto:5mans@gmail.com">5mans@gmail.com</a></p>
+                <p><a href="tel:09712345512">09712345512</a></p>
+                <p>Davao City, Philippines</p>
+            </div>
+        </div>
+        <p class="copyright">© 5man's Rice Trading. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
